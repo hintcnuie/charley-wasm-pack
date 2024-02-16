@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1><code>wasm-pack-template</code></h1>
+  <h1><code>Charley's Wasm code using wasm-pack-template</code></h1>
 
   <strong>A template for kick starting a Rust and WebAssembly project using <a href="https://github.com/rustwasm/wasm-pack">wasm-pack</a>.</strong>
 
@@ -9,15 +9,50 @@
   </p>
 
   <h3>
-    <a href="https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html">Tutorial</a>
+    <a href="https://rustwasm.github.io/docs/wasm-pack/tutorials/npm-browser-packages/index.html">教程</a>
     <span> | </span>
-    <a href="https://discordapp.com/channels/442252698964721669/443151097398296587">Chat</a>
+    <a href="email:hintcnuie@sina.com">联系</a>
   </h3>
 
-  <sub>Built with 🦀🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
+  <sub>Built with 🦀 🕸 by <a href="https://rustwasm.github.io/">The Rust and WebAssembly Working Group</a></sub>
 </div>
 
-## About
+## 快速起步 
+
+1. Install rust using <a href="https://rustup.rs/">rustup</a>.
+
+2. Install wasmpack:
+
+  ```
+    curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
+  ```
+
+3.🐑 wasmpack new:
+
+```
+ wasm-pack new hello-wasm
+```
+
+4. cd hello-wasm
+
+5. 🛠️ wasmpack build:
+   
+   ``` 
+   wasm-pack build
+   ```
+
+5. wasmpack publish:
+
+This tool generates files in a pkg dir.To publish to npm, run:
+
+  ``` 
+    wasm-pack publish
+  ```
+  
+   You may need to login to the registry you want to publish to. You can login using wasm-pack login.
+
+
+## 关于
 
 [**📚 Read this template tutorial! 📚**][template-docs]
 
