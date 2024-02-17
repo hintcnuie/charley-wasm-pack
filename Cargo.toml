@@ -1,6 +1,6 @@
 [package]
 name = "charley-wasm"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["charley <hintcnuie@sina.com>"]
 edition = "2018"
 
@@ -21,6 +21,7 @@ console_error_panic_hook = { version = "0.1.7", optional = true }
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.34"
+js-sys = "0.3.68"
 
 [dependencies.web-sys]
 version = "0.3.4"
@@ -30,6 +31,8 @@ features = [
   'HtmlElement',
   'Node',
   'Window',
+  'CanvasRenderingContext2d',
+  'HtmlCanvasElement',
 ]
 
 [profile.release]
